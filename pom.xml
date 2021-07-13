@@ -6,7 +6,13 @@
     <groupId>com.khanhnguyen</groupId>
     <artifactId>server</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <modules>
+        <module>pap-customer</module>
+        <module>pap-shared</module>
+        <module>pap-restaurant</module>
+        <module>pap-courier</module>
+    </modules>
+    <packaging>pom</packaging>
     <name>Server</name>
 
     <repositories>
@@ -95,6 +101,28 @@
                 <scope>import</scope>
             </dependency>
             <!-- jhipster-needle-maven-add-dependency-management -->
+
+            <!--         PAP DEPEND               -->
+            <dependency>
+                <groupId>com.khanhnguyen</groupId>
+                <artifactId>pap-shared</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.khanhnguyen</groupId>
+                <artifactId>pap-customer</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.khanhnguyen</groupId>
+                <artifactId>pap-restaurant</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.khanhnguyen</groupId>
+                <artifactId>pap-courier</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
